@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Amal A</title>
+    <meta name="description" content="Complete portfolio of Amal A - Video Editor & Storyteller.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        neutral: {
+                            900: '#171717',
+                            800: '#262626',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-neutral-900 text-white min-h-screen font-sans selection:bg-purple-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 bg-neutral-900/90 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter flex items-center gap-2 font-display">
+                <div class="w-8 h-8 bg-purple-600 rounded flex items-center justify-center">
+                    <i data-lucide="play" class="text-white ml-1 w-3.5 h-3.5"></i>
+                </div>
+                AMAL<span class="text-purple-500">A</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="index.html#home"
+                    class="nav-link hover:text-purple-400 transition-colors text-neutral-400">HOME</a>
+                <a href="index.html#about"
+                    class="nav-link hover:text-purple-400 transition-colors text-neutral-400">ABOUT</a>
+                <a href="index.html#work" class="nav-link hover:text-purple-400 transition-colors text-white">WORK</a>
+                <a href="index.html#contact"
+                    class="nav-link hover:text-purple-400 transition-colors text-neutral-400">CONTACT</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <a href="index.html" class="md:hidden text-white">
+                <i data-lucide="arrow-left"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 bg-neutral-900">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 font-display">All Projects</h1>
+            <p class="text-neutral-400 max-w-2xl mx-auto text-lg">
+                A comprehensive collection of my work across various formats.
+            </p>
+        </div>
+    </header>
+
+    <!-- Projects Grid -->
+    <main class="pb-24 bg-neutral-900">
+        <div class="container mx-auto px-6 space-y-24">
+
+            <!-- TV Ads -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-display border-b border-white/10 pb-4">
+                    <i data-lucide="tv-2" class="text-red-500"></i> TV Ads
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative aspect-video bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/TV ads/Frontline-career in logistics.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Career in Logistics</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Commercials / Anchor Videos -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-display border-b border-white/10 pb-4">
+                    <i data-lucide="tv" class="text-purple-500"></i> Commercials & Anchor Videos
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Anchor videos/Falcon-Automation worries out-03.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Falcon Automation 03</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Anchor videos/Falcon-Automation Worries out.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Falcon Automation Worries Out</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Anchor videos/Frontline Next Level Career.2.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Next Level Career</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Anchor videos/Sathmya-Podcast.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Sathmya Podcast</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Podcasts -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-display border-b border-white/10 pb-4">
+                    <i data-lucide="mic" class="text-blue-500"></i> Podcasts
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Podcasts/Focus-Podcast 1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Focus Podcast</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Podcasts/Frontline-Deepak podcast 1.1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Frontline - Deepak</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Podcasts/Frontline-Mujeeb Rahman podcast 1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Frontline - Mujeeb Rahman</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Podcasts/Frontline-SAJID M SALIM Testimonial-1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Sajid M Salim Testimonial</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reels / Social Media (Vertical) -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-display border-b border-white/10 pb-4">
+                    <i data-lucide="smartphone" class="text-pink-500"></i> Reels & Shorts
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Reels/Frontline-Reel 1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Reels/Frontline-Sandeep Warrier.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Reels/Homesoul-Reel-1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Reels/Prisunic Key Handing Ceremony Part 2.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Memes -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-display border-b border-white/10 pb-4">
+                    <i data-lucide="smile" class="text-yellow-500"></i> Memes & Fun
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Memes/Bananads friendshipday_1.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Friendship Day</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Memes/Super-man meme.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Superman Meme</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Content -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 font-display border-b border-white/10 pb-4">
+                    <i data-lucide="bot" class="text-green-500"></i> AI & Experimental
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Ai contents/Falcon-Automation across Saudi.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Automation Across Saudi</h3>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                        <video src="assets/works/Ai contents/Falcon-Saudi National Day.mp4"
+                            class="absolute inset-0 w-full h-full object-cover" controls playsinline
+                            preload="metadata"></video>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                            <h3 class="text-white font-bold truncate">Saudi National Day</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-center text-neutral-600 text-sm border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>no rights reserved.i built my own</p>
+            <p>Designed with <span class="text-purple-500">amaluoo_</span></p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

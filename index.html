@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal A | Video Editor & Storyteller</title>
+    <meta name="description"
+        content="Portfolio of Amal A, a professional Video Editor and Storyteller based in Kerala.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        neutral: {
+                            900: '#171717',
+                            800: '#262626',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-neutral-900 text-white min-h-screen font-sans selection:bg-purple-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter flex items-center gap-2 font-display">
+                <div class="w-8 h-8 bg-purple-600 rounded flex items-center justify-center">
+                    <i data-lucide="play" class="text-white ml-1 w-3.5 h-3.5"></i>
+                </div>
+                AMAL<span class="text-purple-500">A</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="nav-link hover:text-purple-400 transition-colors text-neutral-400"
+                    data-section="home">HOME</a>
+                <a href="#about" class="nav-link hover:text-purple-400 transition-colors text-neutral-400"
+                    data-section="about">ABOUT</a>
+                <a href="#experience" class="nav-link hover:text-purple-400 transition-colors text-neutral-400"
+                    data-section="experience">EXPERIENCE</a>
+                <a href="#work" class="nav-link hover:text-purple-400 transition-colors text-neutral-400"
+                    data-section="work">WORK</a>
+                <a href="#contact" class="nav-link hover:text-purple-400 transition-colors text-neutral-400"
+                    data-section="contact">CONTACT</a>
+                <button
+                    class="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all transform hover:scale-105">
+                    Let's Talk
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-neutral-800 border-b border-white/10 py-4 px-6 flex flex-col gap-4 shadow-2xl">
+            <a href="#home" class="text-left py-2 text-neutral-300 hover:text-purple-400">Home</a>
+            <a href="#about" class="text-left py-2 text-neutral-300 hover:text-purple-400">About</a>
+            <a href="#experience" class="text-left py-2 text-neutral-300 hover:text-purple-400">Experience</a>
+            <a href="#work" class="text-left py-2 text-neutral-300 hover:text-purple-400">Work</a>
+            <a href="#contact" class="text-left py-2 text-neutral-300 hover:text-purple-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div
+                class="inline-block px-3 py-1 mb-6 border border-white/20 rounded-full bg-white/5 backdrop-blur-sm text-sm tracking-wider text-purple-300">
+                VIDEO EDITOR & STORYTELLER
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-9xl font-black tracking-tighter mb-6 leading-tight font-display">
+                CRAFTING <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">VISUAL
+                    NARRATIVES</span>
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                I blend technical precision with creative storytelling. With a background in Computer Science and a
+                passion for motion, I turn raw footage into cinematic experiences.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <a href="#work"
+                    class="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-full font-bold transition-all flex items-center gap-2 group">
+                    <i data-lucide="play" class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"></i>
+                    Watch Reel
+                </a>
+                <a href="#contact"
+                    class="px-8 py-4 bg-transparent border border-white/20 hover:border-white text-white rounded-full font-bold transition-all">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-neutral-500">
+            <i data-lucide="chevron-down" class="w-8 h-8"></i>
+        </div>
+    </section>
+
+    <!-- Stats/Ticker -->
+    <div class="border-y border-white/5 bg-black/20 backdrop-blur-sm py-8 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-wrap justify-between items-center gap-8 text-neutral-400">
+            <div class="flex items-center gap-3">
+                <i data-lucide="monitor" class="text-purple-500 w-6 h-6"></i>
+                <span class="text-2xl font-bold text-white">1.5+</span>
+                <span class="text-sm uppercase tracking-wide">Years Experience</span>
+            </div>
+            <div class="hidden md:block w-px h-12 bg-white/10"></div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="film" class="text-blue-500 w-6 h-6"></i>
+                <span class="text-2xl font-bold text-white">70+</span>
+                <span class="text-sm uppercase tracking-wide">Projects Delivered</span>
+            </div>
+            <div class="hidden md:block w-px h-12 bg-white/10"></div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="zap" class="text-yellow-500 w-6 h-6"></i>
+                <span class="text-2xl font-bold text-white">100%</span>
+                <span class="text-sm uppercase tracking-wide">Client Satisfaction</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About & Skills -->
+    <section id="about" class="py-24 bg-neutral-900">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 flex items-center gap-3 font-display">
+                        <i data-lucide="scissors" class="text-purple-500 w-8 h-8"></i>
+                        The Editor
+                    </h2>
+                    <p class="text-neutral-400 leading-relaxed mb-6 text-lg">
+                        Hi, I'm <span class="text-white font-semibold">Amal A</span>.
+                        I'm a highly motivated Video Editor based in Malappuram, Kerala.
+                    </p>
+                    <p class="text-neutral-400 leading-relaxed mb-6">
+                        What sets me apart is my engineering background. With a <span class="text-white">B.E. in
+                            Computer Science</span>, I approach editing not just as an art, but as a system of efficient
+                        workflows and technical problem-solving.
+                    </p>
+                    <p class="text-neutral-400 leading-relaxed mb-8">
+                        From corporate communications to high-energy social media reels, I ensure every frame serves the
+                        story.
+                    </p>
+
+                    <div class="space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-neutral-500 mb-4">Technical Arsenal
+                        </h3>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Adobe After Effects</span>
+                                <span class="text-neutral-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-neutral-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-purple-600 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">DaVinci Resolve</span>
+                                <span class="text-neutral-500">25%</span>
+                            </div>
+                            <div class="h-2 bg-neutral-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-blue-600 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">CapCut PC</span>
+                                <span class="text-neutral-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-neutral-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-green-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Adobe Premiere Pro</span>
+                                <span class="text-neutral-500">50%</span>
+                            </div>
+                            <div class="h-2 bg-neutral-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-purple-500 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-purple-600 to-blue-600 rounded-2xl transform rotate-3 blur-sm opacity-30">
+                    </div>
+                    <div class="relative">
+                        <!-- Image Added Here -->
+                        <img src="assets/profile_new.jpg" alt="Amal A"
+                            class="rounded-2xl border border-white/10 shadow-2xl w-full object-cover mb-8 grayscale hover:grayscale-0 transition-all duration-500">
+
+                        <div class="bg-neutral-800 p-8 rounded-2xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-6 font-display">Core Competencies</h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <div
+                                    class="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-default">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center shrink-0">
+                                        <i data-lucide="layers" class="text-purple-400 w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Visual Storytelling</h4>
+                                        <p class="text-sm text-neutral-400">Aligning visuals with brand objectives.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-default">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center shrink-0">
+                                        <i data-lucide="layers" class="text-purple-400 w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Motion Graphics</h4>
+                                        <p class="text-sm text-neutral-400">Lower thirds, titles, and dynamic text.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-default">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center shrink-0">
+                                        <i data-lucide="layers" class="text-purple-400 w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Post-Production</h4>
+                                        <p class="text-sm text-neutral-400">End-to-end workflow management.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-default">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center shrink-0">
+                                        <i data-lucide="layers" class="text-purple-400 w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Multi-Cam Sync</h4>
+                                        <p class="text-sm text-neutral-400">Seamless editing for interviews/events.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-default">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-neutral-700 flex items-center justify-center shrink-0">
+                                        <i data-lucide="layers" class="text-purple-400 w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Asset Management</h4>
+                                        <p class="text-sm text-neutral-400">Organized footage logging and prep.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 bg-black/30">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 font-display">Experience</h2>
+                <p class="text-neutral-400 max-w-xl mx-auto">
+                    My professional journey through the post-production landscape.
+                </p>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Timeline Line -->
+                <div
+                    class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-500/0 via-purple-500/50 to-purple-500/0 md:transform md:-translate-x-1/2">
+                </div>
+
+                <!-- Item 1 -->
+                <div class="relative flex flex-col md:flex-row items-start mb-12">
+                    <div
+                        class="absolute left-6 md:left-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-neutral-900 transform -translate-x-1/2 mt-1.5 z-10 shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                    </div>
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="pl-16 md:pl-12 md:w-1/2">
+                        <div
+                            class="bg-neutral-800/50 p-6 rounded-2xl border border-white/5 hover:border-purple-500/30 transition-colors group">
+                            <span
+                                class="inline-block px-3 py-1 bg-purple-500/10 text-purple-400 rounded text-xs font-bold mb-3">
+                                Jan 2025 - Present
+                            </span>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-purple-400 transition-colors">
+                                Video Editor</h3>
+                            <h4 class="text-lg text-neutral-400 mb-4">Bananads.Ads</h4>
+                            <p class="text-neutral-400 text-sm leading-relaxed">
+                                Managing end-to-end post-production for 60+ diverse assets including B2B promos and ads.
+                                Collaborating with creative teams to align visual storytelling with brand goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-start mb-12">
+                    <div
+                        class="absolute left-6 md:left-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-neutral-900 transform -translate-x-1/2 mt-1.5 z-10 shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                    </div>
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="pl-16 md:pr-12 md:pl-0 md:text-right md:w-1/2">
+                        <div
+                            class="bg-neutral-800/50 p-6 rounded-2xl border border-white/5 hover:border-purple-500/30 transition-colors group">
+                            <span
+                                class="inline-block px-3 py-1 bg-purple-500/10 text-purple-400 rounded text-xs font-bold mb-3">
+                                Apr 2024 - Jan 2025
+                            </span>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-purple-400 transition-colors">
+                                Freelance Editor</h3>
+                            <h4 class="text-lg text-neutral-400 mb-4">Self-Employed</h4>
+                            <p class="text-neutral-400 text-sm leading-relaxed">
+                                Produced promotional videos and reels for various industries. Delivered 10+ high-quality
+                                projects strictly adhering to client vision and deadlines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative flex flex-col md:flex-row items-start mb-12">
+                    <div
+                        class="absolute left-6 md:left-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-neutral-900 transform -translate-x-1/2 mt-1.5 z-10 shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                    </div>
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="pl-16 md:pl-12 md:w-1/2">
+                        <div
+                            class="bg-neutral-800/50 p-6 rounded-2xl border border-white/5 hover:border-purple-500/30 transition-colors group">
+                            <span
+                                class="inline-block px-3 py-1 bg-purple-500/10 text-purple-400 rounded text-xs font-bold mb-3">
+                                Internship
+                            </span>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-purple-400 transition-colors">
+                                Editing Intern</h3>
+                            <h4 class="text-lg text-neutral-400 mb-4">Bananads.Ads</h4>
+                            <p class="text-neutral-400 text-sm leading-relaxed">
+                                Assisted senior editors with logging and timeline prep. Gained hands-on experience in
+                                multi-camera synchronization and basic motion graphics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-24 bg-neutral-900">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2 font-display">Selected Work</h2>
+                    <p class="text-neutral-400">A glimpse into my editing timeline.</p>
+                </div>
+                <a href="projects.html"
+                    class="hidden md:flex items-center gap-2 text-purple-400 hover:text-white transition-colors">
+                    View All Projects <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                    <video src="assets/works/Anchor videos/Falcon-Automation worries out-03.mp4"
+                        class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline></video>
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Commercial Video</h3>
+                        <p class="text-sm text-neutral-300 mb-4">Commercial • 2025</p>
+                        <div
+                            class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i data-lucide="play" class="w-5 h-5 fill-white ml-1 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                    <video src="assets/works/Podcasts/Frontline-Mujeeb Rahman podcast 1.mp4"
+                        class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline></video>
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Podcast</h3>
+                        <p class="text-sm text-neutral-300 mb-4">Podcast • 2025</p>
+                        <div
+                            class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i data-lucide="play" class="w-5 h-5 fill-white ml-1 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden cursor-pointer">
+                    <video src="assets/works/Reels/Homesoul-Reel-1.mp4"
+                        class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline></video>
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Reels</h3>
+                        <p class="text-sm text-neutral-300 mb-4">Social Media • 2025</p>
+                        <div
+                            class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i data-lucide="play" class="w-5 h-5 fill-white ml-1 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center md:hidden">
+                <a href="projects.html" class="text-purple-400 font-medium">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-neutral-900 to-black"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div
+                class="max-w-4xl mx-auto bg-neutral-800/80 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 font-display">Let's Create Together</h2>
+                        <p class="text-neutral-400 mb-8 leading-relaxed">
+                            Ready to elevate your visual content? Whether it's a commercial, a social reel, or a
+                            corporate film, I'm ready to cut.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 group">
+                                <div
+                                    class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-purple-600 transition-colors">
+                                    <i data-lucide="phone" class="text-white w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-neutral-500 uppercase tracking-wider">Call Me</p>
+                                    <p class="text-lg font-medium">+91 9048721340</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 group">
+                                <div
+                                    class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-purple-600 transition-colors">
+                                    <i data-lucide="mail" class="text-white w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-neutral-500 uppercase tracking-wider">Email Me</p>
+                                    <p class="text-lg font-medium">heyamaled.it@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 group">
+                                <div
+                                    class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-purple-600 transition-colors">
+                                    <i data-lucide="map-pin" class="text-white w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-neutral-500 uppercase tracking-wider">Location</p>
+                                    <p class="text-lg font-medium">Malappuram, Kerala</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 flex gap-4">
+                            <a href="https://www.behance.net/amala2"
+                                class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-[#0077b5] hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor" class="w-4 h-4">
+                                    <path
+                                        d="M7.78 15.22h3.56c.86 0 1.56-.69 1.56-1.55 0-.86-.7-1.55-1.56-1.55H7.78v3.1zm0-4.66h3.11c.69 0 1.24-.56 1.24-1.24 0-.69-.55-1.25-1.24-1.25H7.78v2.49zM19.11 11c0-2.07-1.61-3.75-3.66-3.75-2.06 0-3.67 1.68-3.67 3.75 0 2.07 1.61 3.75 3.67 3.75 2.05 0 3.66-1.68 3.66-3.75zm-5.66 0c0-1.1.89-2 2-2 1.11 0 2 .9 2 2s-.89 2-2 2c-1.11 0-2-.9-2-2zm-8.23 6.22h5.78c2.06 0 3.78-1.68 3.78-3.75 0-1.38-.78-2.58-1.94-3.22.89-.55 1.44-1.52 1.44-2.58 0-1.8-1.44-3.25-3.22-3.25H2v12.8h3.22zm11.89-9.33h-4.44V6.11h4.44v1.78z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/amaluoo_?igsh=MTExbnR4OG1sMGNpcQ%3D%3D&utm_source=qr"
+                                class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-[#E1306C] hover:text-white transition-colors">
+                                <i data-lucide="instagram" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-400 mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
+                                placeholder="Your Name" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-400 mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
+                                placeholder="your@email.com" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-400 mb-2">Message</label>
+                            <textarea rows="4"
+                                class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
+                                placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-white text-black font-bold py-4 rounded-lg hover:bg-purple-500 hover:text-white transition-all transform hover:scale-[1.02]">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-center text-neutral-600 text-sm border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>no rights reserved.i built my own</p>
+            <p>Designed with <span class="text-purple-500">amaluoo_</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
